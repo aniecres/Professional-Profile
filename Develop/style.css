@@ -1,0 +1,365 @@
+
+/* Variables (colors) */
+:root {
+    --primary: #0e0e0c;
+    --secondary: #5a3ee7;
+    --pop: #c166e6;
+    --color_1: #d2aee2;
+    --color_2:rgb(157, 61, 236);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px gold solid;
+}
+
+/* general styling */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--color_1);
+    background-image: url(../images/istockphoto-1224500457-170667a.jpeg);
+    background-size: cover;
+    background-color: var(--color_1);
+}
+
+/* header styling */
+header {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.header-text {
+    text-align: center;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    }
+
+header div {
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    color: var(--color_1);
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--pop);
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color_2);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav {
+    margin: 20px;
+}
+
+header nav ul li a {
+    padding: 8px;
+    font-size: 28px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background: var(--pop);
+    color: var(--primary);
+    border-radius: 15px;
+}
+
+/* header styling end */
+
+
+/* hero styling */
+.hero {
+    background-image: url("./assets/images/image.jpeg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    height: 400px;
+    border-radius: 20px;
+}
+
+.hero .quote {
+    font-size: 35px;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    color: rgb(165, 117, 168);
+}
+
+.hero .quote #quote-text {
+    font-size: 35px;
+}
+/* hero styling end */
+
+/* utility class styling start */
+.title {
+    border-right: 10px solid var(--pop);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
+    font-size: 100%;
+}
+/* utility class styling end */
+
+/* about me section styling start */
+.about-me {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: stretch;
+    padding-top: 30px;
+}
+
+.about-me-text {
+    width: 100%;
+    background-color: rgba(241, 244, 246, 1.0);
+}
+
+
+.about-me p {
+    text-align: center;
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
+    color: black;
+}
+/* about me section styling end */
+
+/* my-work section styling start */
+.anavids-work {
+    align-items: center;
+    padding: 30px 0;
+    display: flex;
+}
+
+
+.projects-grid {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+    background-color: rgba(241, 244, 246, 1.0);
+   
+}
+
+.project {
+    border: solid;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.project:hover {
+    opacity: 1.0;
+}
+
+
+.project1 img {
+   height: 200px;
+    
+}
+
+.project2 img {
+    height: 200px;
+}
+
+.project3 img {
+ height: 200px;
+}
+
+
+.project-label {
+    width: 100%;
+    background-color: lightgray;;
+    padding: 10px;
+    align-items: center;
+    justify-content: center
+};
+
+
+/* my-work section styling end */
+
+/* contact me section styling start */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    background-color: initial;
+}
+
+.content-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#contact-methods {
+    width: 100%;
+   border: var(--pop);
+   background-color: rgb(157, 61, 236); 
+   text-decoration: underline;
+   font-style: normal;
+}
+
+footer {
+    background-color: var(--secondary);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer ul li {
+    padding: 8px;
+    font-size: 28px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+}
+   
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    padding: 6px;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    background: var(--pop);
+    color: var(--secondary);
+    border-radius: 15px;
+}
+footer li p:hover {
+    background: var(--pop);
+    color: var(--secondary);
+    border-radius: 10px;
+
+}
+
+/* media query for tablet screens */
+@media screen and (max-width: 768px) {
+    .hero .quote {
+        font-size: 50px;
+        padding-right: 20px;
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        /*padding: 0 15px;*/
+        line-height: 1.6;
+    }
+}
+
+/* media query for mobile screens */
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header nav ul {
+        min-height: 80px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .title {
+        border-bottom: 5px solid var(--pop);
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-me p {
+        font-size: 18px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .anavids-work {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .projects-grid-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .projects-grid {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    footer ul li {
+        padding: 10px;
+        text-align: right;
+    }
+    
+}
